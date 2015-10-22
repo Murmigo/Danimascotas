@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./PrincipalTemplate.xhtml">
+
+            <ui:define name="top">
+                top
+            </ui:define>
+            
+            <ui:define name="left" >
+                left
+            </ui:define>
+
+            <ui:define name="content">
+                <!--<div id="formulario">
+            <h:form>
+                <br/>
+                Nombre:
+                <input type="text" name="Nombre: " value=""/>
+                <br/>
+                <br/>
+                Apellidos:
+                <input type="text" name="Nombre: " value="" />
+                <br/>
+                <br/>
+                Dirección:
+                <input type="text" name="Nombre: " value="" />
+                <br/>
+                <br/>
+                Población:
+                <input type="text" name="Nombre: " value="" />
+                <br/>
+                <br/>
+                Email:
+                <input type="text" name="Nombre: " value="" />
+                <br/>
+                <br/>
+                Como nos has conocido:
+                    <select name="Como nos conociste">
+                        <option>Internet</option>
+                        <option>Television</option>
+                        <option>Prensa</option>
+                        <option>Amigos</option>
+                    </select>
+                <br/>
+                <br/>
+                Sexo:    
+                Hombre <input type="radio" name="Sexo" value="Hombre" />
+                Mujer <input type="radio" name="Sexo" value="Mujer" />
+                <br/>
+                <br/>
+                Password:
+                <input type="password" name="Password" value="" />
+                <br/>
+                <br/>
+                <div id="botones">
+                <input type="submit" value="Enviar" name="Enviar"/> <input type="submit" value="Cancelar" name="Cancelar" />
+                </div>
+                <br/>
+                <br/>
+            </h:form>
+        </div>
+        -->
+        <div class="formulario">
+            <label class="row">
+                <div class="col-xs-5">Nombre: </div>
+                <div class="col-xs-9">
+                    <input type="text" name="Nombre" value="" align="right"/>
+                </div>
+            </label>
+            <br/>
+            <label class="row">
+                <div class="col-xs-5">Apellidos: </div>
+                <div class="col-xs-9">
+                    <input type="text" name="Apellidos" value="" align="right" />
+                </div>
+            </label>
+            <br/>
+            <label class="row">
+                <div class="col-xs-5">E-mail: </div>
+                <div class="col-xs-9">
+                    <input type="text" name="E-mail" value="" align="right" />
+                </div>
+            </label>
+            <br/>
+            <label class="row">
+                <div class="col-xs-5">Contraseña: </div>
+                <div class="col-xs-9">
+                    <input type="password" name="Contraseña" value="" align="right" />
+                </div>
+            </label>
+            <br/>
+            <label class="row">
+                <div class="col-xs-5">Soy Ciente </div>
+                <div class="col-xs-9">
+                    Particular <input type="radio" name="Soy Cliente" value="Particular" /> Profesional <input type="radio" name="Soy Cliente" value="Profesional" />
+                </div>
+            </label>
+            <br/>
+        </div>
+            </ui:define>
+
+            <ui:define name="bottom">
+                bottom
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
