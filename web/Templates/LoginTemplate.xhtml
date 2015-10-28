@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./PrincipalTemplate.xhtml">
+
+            <ui:define name="left">
+                left
+            </ui:define>
+
+            <ui:define name="content">
+                <div class="jumbotron" align="center" > 
+            <div class="row">
+            <div class="row-xs-1">
+                <img src="resources/img/logo.png" width="200" height="150"/>
+                </div>
+            <div class="row-xs-3"></div>
+            <div class="row-xs-4">
+                    <form>
+                    Usuario:  <typeText/> <br/>
+                    </form>
+                </div>
+                <div class="row-xs-5">
+                    <form>
+                        <br/>
+                          Password: <typeText/><br/>
+                    </h:form>
+                </div>
+            <div class="row-xs-8"></div>
+            <div class="row-xs-9" align="center">
+                <div class="col-xs-12">
+                <form>
+                    <input type="checkbox" name="recordarContrasenia" value="Remember Password" disabled="disabled">Recordar contraseña?</input>
+                <form>
+                </div>
+                <div class="col-xs-19">
+                    <button class="btn btn-primary" >Login</button>
+                </div>
+            </div>
+            </div>
+        </div>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
