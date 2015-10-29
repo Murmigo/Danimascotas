@@ -16,141 +16,85 @@
             </ui:define>
 
             <ui:define name="content">
-                <!--<div id="formulario">
-            <h:form>
-                <br/>
-                Nombre:
-                <input type="text" name="Nombre: " value=""/>
-                <br/>
-                <br/>
-                Apellidos:
-                <input type="text" name="Nombre: " value="" />
-                <br/>
-                <br/>
-                Dirección:
-                <input type="text" name="Nombre: " value="" />
-                <br/>
-                <br/>
-                Población:
-                <input type="text" name="Nombre: " value="" />
-                <br/>
-                <br/>
-                Email:
-                <input type="text" name="Nombre: " value="" />
-                <br/>
-                <br/>
-                Como nos has conocido:
-                    <select name="Como nos conociste">
-                        <option>Internet</option>
-                        <option>Television</option>
-                        <option>Prensa</option>
-                        <option>Amigos</option>
-                    </select>
-                <br/>
-                <br/>
-                Sexo:    
-                Hombre <input type="radio" name="Sexo" value="Hombre" />
-                Mujer <input type="radio" name="Sexo" value="Mujer" />
-                <br/>
-                <br/>
-                Password:
-                <input type="password" name="Password" value="" />
-                <br/>
-                <br/>
-                <div id="botones">
-                <input type="submit" value="Enviar" name="Enviar"/> <input type="submit" value="Cancelar" name="Cancelar" />
-                </div>
-                <br/>
-                <br/>
-            </h:form>
-        </div>
-        -->
-        <!-- <div class="formulario">
-            <label class="row">
-                <div class="col-xs-5">Nombre: </div>
-                <div class="col-xs-9">
-                    <input type="text" name="Nombre" value="" align="right"/>
-                </div>
-            </label>
-            <br/>
-            <label class="row">
-                <div class="col-xs-5">Apellidos: </div>
-                <div class="col-xs-9">
-                    <input type="text" name="Apellidos" value="" align="right" />
-                </div>
-            </label>
-            <br/>
-            <label class="row">
-                <div class="col-xs-5">E-mail: </div>
-                <div class="col-xs-9">
-                    <input type="text" name="E-mail" value="" align="right" />
-                </div>
-            </label>
-            <br/>
-            <label class="row">
-                <div class="col-xs-5">Contraseña: </div>
-                <div class="col-xs-9">
-                    <input type="password" name="Contraseña" value="" align="right" />
-                </div>
-            </label>
-            <br/>
-            <label class="row">
-                <div class="col-xs-5">Soy Ciente </div>
-                <div class="col-xs-9">
-                    Particular <input type="radio" name="Soy Cliente" value="Particular" /> Profesional <input type="radio" name="Soy Cliente" value="Profesional" />
-                </div>
-            </label>
-            <br/>
-        </div> -->
+        
         <form class="form-horizontal">
             <div class="form-group">
                 <label for="inputNombre" class="col-sm-2 control-label">Nombre</label>
                     <div class="col-sm-10">
-                        <input type="nombre" class="form-control" id="inputEmail3" placeholder="Nombre">
+                        <input type="nombre" class="form-control" id="inputNombre" placeholder="Nombre"/>
                     </div>
             </div>
+            <br/>
             <div class="form-group">
                 <label for="inputApellidos" class="col-sm-2 control-label">Apellidos</label>
                     <div class="col-sm-10">
-                        <input type="apellidos" class="form-control" id="inputEmail3" placeholder="Apellidos">
+                        <input type="apellidos" class="form-control" id="inputApellidos" placeholder="Apellidos"/>
                     </div>
             </div>
+            <br/>
             <div class="form-group">
-                <label for="inputDireccion" class="col-sm-2 control-label">Direccion</label>
+                <label for="inputDireccion" class="col-sm-2 control-label">Dirección</label>
                     <div class="col-sm-10">
-                        <input type="direccion" class="form-control" id="inputEmail3" placeholder="direccion">
+                        <input type="direccion" class="form-control" id="inputDireccion" placeholder="dirección"/>
                     </div>
             </div>
+            <br/>
             <div class="form-group">
-                <label for="inputPoblacion" class="col-sm-2 control-label">Poblacion</label>
+                <label for="inputPoblacion" class="col-sm-2 control-label">Población</label>
                     <div class="col-sm-10">
-                        <input type="poblacion" class="form-control" id="inputEmail3" placeholder="poblacion">
+                        <input type="poblacion" class="form-control" id="inputPoblacion" placeholder="población"/>
                     </div>
             </div>
+            <br/>
             <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email"/>
                     </div>
             </div>
+            <br/>
             <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password"/>
                     </div>
             </div>
+            <br/>
+            <div class="form-group">
+                <label for="inputSoyCliente" class="col-sm-2 control-label">Soy Cliente</label>
+                    <div class="col-sm-10">
+                        <input type="radio" name="Soy Cliente" value="Particular">Particular</input>
+                        <input type="radio" name="Soy Cliente" value="Profesional">Profesional</input>                       
+                    </div>
+            </div>
+            <br/>
+            <div class="form-group">
+                <label for="inputComoNosConociste" class="col-sm-2 control-label">Como nos Conociste?</label>
+                    <select name="inputComoNosConociste" id="ComoNosConociste" class="type-select elem-collapse">
+                        <option value="1">Un profesional me ha recomendado</option>
+                        <option value="2">A través de un amigo</option>
+                        <option value="3">He visto vuestro anuncio en televisión</option>
+                        <option value="4">Tiendas físicas</option>
+                        <option value="5">Google</option>
+                        <option value="6">Redes sociales</option>
+                        <option value="7">Publicidad en otras webs</option>
+                        <option value="8">Otro</option>
+                    </select>
+            </div>
+            <br/>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox"> Remember me
+                            <input type="checkbox"/> Remember me
                         </label>
                     </div>
                 </div>
             </div>
+            <br/>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Sign in</button>
+                    <button type="submit" class="btn btn-default">Registrar</button>
                 </div>
             </div>
         </form>
