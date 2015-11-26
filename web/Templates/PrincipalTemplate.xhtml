@@ -8,22 +8,53 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <h:outputStylesheet name="./css/default.css"/>
         <h:outputStylesheet name="./css/cssLayout.css"/>
-        <title>Facelets Template</title>
+        <h:outputStylesheet name="bootstrap.min.css" library="css"/>
+	<h:outputStylesheet name="bootstrap-theme.min.css" library="css"/>
+							
+	<h:outputScript	name="jquery-2.1.4.min.js" library="js"/>
+	<h:outputScript	name="bootstrap.min.js"	library="js"/>
+        
+        <title>DaniMascotas</title>
     </h:head>
 
     <h:body>
 
-        <div id="top">
-            <ui:insert name="top">Top</ui:insert>
+        <div id="top" style="text-align: center; vertical-align: middle; line-height: 30px;">
+            <ui:insert name="top">
+                <div class="jumbotron">
+                    <div class="row" >
+                        <div class="col-xs-5">
+                            <img src="../resources/img/logo.png"></img>
+                        </div>
+                        <div class="col-xs-3">
+                            Home
+                        </div>
+                        <div class="col-xs-2">
+                            Contacto
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="LoginTemplate.xhtml">Logueate</a>
+                        </div>
+
+                        
+                             
+                    </div>
+                </div>
+            </ui:insert>
         </div>
+        
         <div>
+            
             <div id="left">
                 <ui:insert name="left">Left</ui:insert>
             </div>
+            
             <div id="content" class="left_content">
                 <ui:insert name="content">Content</ui:insert>
             </div>
+            
         </div>
+        
         <div id="bottom">
             <ui:insert name="bottom">Bottom</ui:insert>
         </div>
