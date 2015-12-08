@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./PrincipalTemplate.xhtml">
+
+            <ui:define name="left">
+                left
+            </ui:define>
+
+            <ui:define name="content">
+                  
+                <form>
+                    <div class="row">
+                        <div class="col-xs-2">    
+                            Usuario:
+                        </div>
+                        <div class="col-xs-3">
+                            <input type="text" name="usuario"></input>        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">    
+                            Password:
+                        </div>
+                        <div class="col-xs-3">
+                              <input type="password"></input>  
+                        </div>
+                    </div>
+                    <br/>  
+                    <input type="checkbox" name="recordarPassword" value="Remember Password" disabled="disabled">Recordar contraseña?</input>
+                    <br/>
+                    <button type="submit" class="btn btn-primary" >Login</button>
+                    
+                </form>
+                
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
