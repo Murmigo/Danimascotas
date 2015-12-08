@@ -26,7 +26,7 @@
                             <img src="../resources/img/logo.png"></img>
                         </div>
                         <div class="col-xs-2">  
-                            <p style="font-family: fantasy; font-size: 40px;alignment-adjust: middle;">Home</p>                        </div>  
+                            <a href="PrincipalTemplate.xhtml"><p style="font-family: fantasy; font-size: 40px;alignment-adjust: middle;">Home</p></a>                        </div>  
                         <div class="col-xs-2">  
                             <br/>
                         </div>
@@ -44,7 +44,11 @@
         <div>
             
             <div id="left">
-                <ui:insert name="left">Left</ui:insert>
+                <a><p>Perros</p></a>
+                <a><p>Gatos</p></a>
+                <a><p>Peces</p></a>
+                <a><p>Roedores</p></a>
+                <a><p>Reptiles</p></a>
             </div>
             
             <div id="content" class="left_content">
@@ -54,7 +58,22 @@
         </div>
         
         <div id="bottom">
-            <ui:insert name="bottom">Bottom</ui:insert>
+            <div class="row">
+                        <div class="col-xs-2">
+                            A tener en cuenta
+                        </div>
+                        <div class="col-xs-2">  
+                            <a href="PrincipalTemplate.xhtml"><p style="font-family: fantasy; font-size: 40px;alignment-adjust: middle;">Informacion</p></a>                        </div>  
+                        <div class="col-xs-2">  
+                            <br/>
+                        </div>
+                        <div class="col-xs-4">  
+                            <br/>
+                        </div>
+                        <div class="col-xs-2">  
+                            <a href="LoginTemplate.xhtml"><p style="font-family: fantasy; font-size: 40px;alignment-adjust: middle;">Contacto</p></a> 
+                        </div>
+                     </div>
         </div>
 
     </h:body>
