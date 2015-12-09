@@ -1,30 +1,27 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/facelets"
       >
-    <h:head>
-        <title>Facelet Title</title>
-       
-       <h:outputStylesheet name="bootstrap.min.css" library="css"/>
-       <h:outputStylesheet name="bootstrap-theme.min.css" library="css"/>
-       
-       <h:outputScript name="jquery-2.1.4.min.js" library="js"/>
-       <h:outputScript name="bootstrap.min.js" library="js"/>
-       
-        
-    </h:head>
-    <h:body>
-        
-        
+
+    <body>
+
+        <ui:composition template="./PrincipalTemplate.xhtml">
+
+            <ui:define name="top">
+                top
+            </ui:define>
+
+            <ui:define name="content">
+                    
         <div class="jumbotron"> 
             <div class="row">
                 <div class="col-xs-3">
                    
                 </div>
-                <div class="col-xs-3" style="background-color: #f2dede">
-                    <h:form>
+                <div class="col-xs-3" style="background-color: #f7ecb5">
+                    <form>
                          <br/>
                          <img style="margin-left: 100px" src="../resources/img/logo.png"  alt="avatar" width="90" height="90"></img>
                          <br/>
@@ -32,19 +29,21 @@
                              <br/>
                          
                         Username: 
-                        <h:inputText styleClass="input-sm" />
+                        <input type="text" styleClass="input-sm" />
                         <br/>
                         <br/>
-                        Password: 
-                        <h:inputText styleClass="input-sm" /><br/>
-                        <h:commandButton  label="xs" styleClass="btn btn-danger"  value="Login >>" />
-                        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-send" ></span> Enviar</button>
+                        Password:
+                        <input type="password" styleClass="input-sm" /><br/>
+                        <br/> 
+                        <button style="margin-left: 100px " type="button" class="btn btn-success" ><span class="glyphicon glyphicon-send" ></span> ENTRAR</button>
                       <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Register</a></li>
                         <li><a href="#about">lost you password?</a></li>
                         <li><a href="#contact">back to blog</a></li>
                     </ul>
-                    </h:form>
+                    
+                    </form>
+                    
                 </div>
                 
                 <div class="col-xs-6">
@@ -53,5 +52,9 @@
                 </div>
             </div>
         </div>
-    </h:body>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
 </html>
