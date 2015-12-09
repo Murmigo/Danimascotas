@@ -1,38 +1,57 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/facelets"
+      >
 
     <body>
 
         <ui:composition template="./PrincipalTemplate.xhtml">
 
-            <ui:define name="left">
-                left
+            <ui:define name="top">
+                top
             </ui:define>
 
             <ui:define name="content">
-                  
-                <form>
-                    <div class="row">
-                        <div class="col-xs-2">    
-                            Usuario:
-                            <br/>
-                            Password:
-                            <br/>  
-                    <input type="checkbox" name="recordarPassword" value="RememberPassword" disabled="enabled"> Recordar contraseña</input>
-                    <br/>
-                    <button type="submit" class="btn btn-primary" >Login</button>
-                        </div>
-                        <div class="col-xs-10">
-                            <input type="text" name="usuario"></input>   
-                            <br/>
-                            <input type="password"></input>
-                        </div>
-                    </div>
-
-                </form>
+                    
+        <div class="jumbotron"> 
+            <div class="row">
+                <div class="col-xs-3">
+                   
+                </div>
+                <div class="col-xs-3" style="background-color: #f7ecb5">
+                    <form>
+                         <br/>
+                         <img style="margin-left: 100px" src="../resources/img/logo.png"  alt="avatar" width="90" height="90"></img>
+                         <br/>
+                           <br/>
+                             <br/>
+                         
+                        Username: 
+                        <input type="text" styleClass="input-sm" />
+                        <br/>
+                        <br/>
+                        Password:
+                        <input type="password" styleClass="input-sm" /><br/>
+                        <br/> 
+                        <button style="margin-left: 100px " type="button" class="btn btn-success" ><span class="glyphicon glyphicon-send" ></span> ENTRAR</button>
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Register</a></li>
+                        <li><a href="#about">lost you password?</a></li>
+                        <li><a href="#contact">back to blog</a></li>
+                    </ul>
+                    
+                    </form>
+                    
+                </div>
                 
+                <div class="col-xs-6">
+                    <br/>
+                    
+                </div>
+            </div>
+        </div>
             </ui:define>
 
         </ui:composition>
