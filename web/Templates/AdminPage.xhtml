@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+        <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="./css/default.css"/>
+        <h:outputStylesheet name="./css/cssLayout.css"/>
+        <h:outputStylesheet name="bootstrap.min.css" library="css"/>
+	<h:outputStylesheet name="bootstrap-theme.min.css" library="css"/>
+	<h:outputStylesheet name="yoelcss.css" library="css"/>
+        <link rel="stylesheet" href="yoelcss.css" type="text/css/"/>
+        
+	<h:outputScript	name="jquery-2.1.4.min.js" library="js"/>
+	<h:outputScript	name="bootstrap.min.js"	library="js"/>
+        
+        <title>DaniMascotas</title>
+    </h:head>
+    <body>
+
+        <ui:composition template="./PrincipalTemplate.xhtml">
+
+            <ui:define name="content" class="color1">
+                <div class="row container-fluid">
+                    <div class="col-sm-3 col-md-2 sidebar">
+                        <ul class="nav nav-sidebar">
+                            <li class="active" style="background: #23527c; color: #fff; "><a href="#"><font color="white">Overview </font></a></li>
+                          <li><a href="#">Reports</a></li>
+                          <li><a href="#">Analytics</a></li>
+                          <li><a href="#">Export</a></li>
+                        </ul>
+                        <ul class="nav nav-sidebar">
+                          <li><a href="">Nav item</a></li>
+                          <li><a href="">Nav item again</a></li>
+                          <li><a href="">One more nav</a></li>
+                          <li><a href="">Another nav item</a></li>
+                          <li><a href="">More navigation</a></li>
+                        </ul>
+                        <ul class="nav nav-sidebar">
+                          <li><a href="">Nav item again</a></li>
+                          <li><a href="">One more nav</a></li>
+                          <li><a href="">Another nav item</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8" style="background: #ece3a5">
+                        <br />
+                        <div class="jumbotron" style="background: lightsteelblue">
+                            <img class="img-thumbnail" src="http://www.tumascota.com.co/images/ft_banner1.jpg" />      
+                            <p class="lead">¿Buscas lo mejor para tu mascota? Tenemos lo que buscas.</p>
+                            <p><a class="btn btn-lg btn-success" href="#" role="button">Visita la Tienda!</a></p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-offset-2">
+                                <img class="img-circle" src="https://image.freepik.com/vector-gratis/vector-de-usuario-avatar-icono_279-10313.jpg" alt="Generic placeholder image" width="140" height="140" />
+                                <h2>Datos personales</h2>
+                                <p>Nombre: </p>
+                                <p>Apellido </p>
+                                <p>Dirección: </p>
+                                <p>Código Postal </p>
+                            </div>
+                        </div>
+                        <!--&lt;p&gt;&lt;a class="btn btn-default" href="#" role="button"&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;-->
+                    </div>
+                </div> <!-- Fin &lt;class="row container-fluid"&gt;-->
+                
+                <div class="row">
+                    <div class=" col-md-12 col-lg-6" style="background:#34495e; color: #fff;">
+                        .col-md-3
+                    </div>
+                    <div class=" col-md-12 col-lg-6" style="background:#adadad; color: #fff;">
+                        .col-md-3
+                    </div>
+                    <div class=" col-md-12 col-lg-6 " style="background:#34495e; color: #fff;">
+                        .col-md-3
+                    </div>
+                    <div class="col-md-12 col-lg-6" style="background:#adadad; color: #fff;">
+                        .col-md-3
+                    </div>
+                </div>
+            
+                
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
